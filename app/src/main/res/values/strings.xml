@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">一伴审核版本专用</string>
+    <string name="channel">channel：</string>
+    <string name="version_name">versionName：</string>
+    <string name="version_id">version_id：</string>
+    <string name="add_record">添加记录</string>
+    <string name="open_record">开启正式页面</string>
+    <string name="close_record">开启审核页面</string>
+
+
+    <string name="input_channel">请输入channel</string>
+    <string name="input_version_name">请输入version_name</string>
+    <string name="input_version_id">请输入version_id</string>
+
+
+    <string name="rule_text">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+</resources>

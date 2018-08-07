@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@mipmap/formal_login_regis_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/d16px"
+    android:paddingRight="@dimen/d16px"
+    tools:context="com.example.shinelon.checkversion.activity.MainActivity">
+    <!--渠道-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d16px">
+
+        <TextView
+            android:id="@+id/tv_channel"
+            style="@style/tv_style"
+            android:text="@string/channel" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_channel"
+            style="@style/actv_style"
+            android:digits="@string/rule_text"
+            android:hint="@string/input_channel"
+            android:inputType="textVisiblePassword" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+    <!--版本号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d16px">
+
+        <TextView
+            style="@style/tv_style"
+            android:text="@string/version_name" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_version_name"
+            style="@style/actv_style"
+            android:hint="@string/input_version_name" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+    <!--版本id-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d16px">
+
+        <TextView
+            style="@style/tv_style"
+            android:text="@string/version_id" />
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_version_id"
+            style="@style/actv_style"
+            android:hint="@string/input_version_id"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_add_record"
+        android:layout_width="@dimen/d160px"
+        android:layout_height="@dimen/d80px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/d32px"
+        android:layout_marginTop="@dimen/d32px"
+        android:background="@drawable/black_btn_bg"
+        android:onClick="add_record"
+        android:text="@string/add_record"
+        android:textColor="@color/white" />
+
+    <com.example.shinelon.checkversion.widge.SwitchButton
+        android:id="@+id/sb_text"
+        style="@style/SwitchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d32px"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:kswTextOff="Off"
+        app:kswTextOn="On" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d32px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/d16px"
+            android:layout_weight="1"
+            android:background="@drawable/black_btn_bg"
+            android:onClick="openCheck"
+            android:text="@string/open_record"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_close_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d16px"
+            android:layout_weight="1"
+            android:background="@drawable/black_btn_bg"
+            android:onClick="closeCheck"
+            android:text="@string/close_record"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

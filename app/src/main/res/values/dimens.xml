@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d32px">16dp</dimen>
+    <dimen name="d16px">8dp</dimen>
+    <dimen name="corners">3dp</dimen>
+
+
+
+
+    <dimen name="d160px">80dp</dimen>
+    <dimen name="d100px">50dp</dimen>
+    <dimen name="d80px">40dp</dimen>
+    <dimen name="s32px">16sp</dimen>
+    <dimen name="s36px">18sp</dimen>
+    <dimen name="s40px">20sp</dimen>
+
+</resources>
